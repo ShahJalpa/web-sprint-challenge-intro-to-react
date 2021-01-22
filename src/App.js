@@ -31,20 +31,24 @@ const App = () => {
     .catch((error) =>{
       console.log('Opps! something went wrong! Please try aging!', error);
     })
-  }, [])
+  }, []);
 
-  cosnst CharacterList = sty
+  const CharacterList = (props) => (
+    <div className="characterList"> 
+       {character.map((char) =>
+            { 
+              return <CharacterList key={char.id} character={char}/>
+            } 
+        )}
+    </div>
+  );
 
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
-      <div className="CharacterList"> 
-        {
-          character.map((char) =>{
-            return <Character key={char.id} character={char}/>
-          })
-        }
-      </div>
+      <CharacterList>
+      </CharacterList>
+      
     </div>
   );
 }
