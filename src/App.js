@@ -43,14 +43,28 @@ const App = () => {
   //   </div>
   // );
 
+  const StyleApp = styled.div`
+    width: 100%;
+    margin: 2%
+    display: flex;
+  `
+
   return (
     <div className="App">
       <h1 className="Header">Rick and Morty Characters</h1>
-      <div>
+      <StyleApp>
         {character.map((char) => (
-          <Character key={char.id} charName={char.name}/>
+          <Character key={char.id} 
+                     charrId ={char.id} 
+                     charName={char.name}
+                     charStatus={char.status}
+                     charSpecies={char.species}
+                     charType={char.type}
+                     charGender={char.gender}
+                     charImage={char.url}
+          />
         ))}
-      </div>
+      </StyleApp>
  </div>
   );
 }
