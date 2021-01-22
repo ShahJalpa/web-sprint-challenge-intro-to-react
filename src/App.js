@@ -33,23 +33,25 @@ const App = () => {
     })
   }, []);
 
-  const CharacterList = (props) => (
-    <div className="characterList"> 
-       {character.map((char) =>
-            { 
-              return <CharacterList key={char.id} character={char}/>
-            } 
-        )}
-    </div>
-  );
+  // const CharacterList = (props) => (
+  //   <div className="characterList"> 
+  //      {character.map((char) =>
+  //           { 
+  //             return <CharacterList key={char.id} character={char}/>
+  //           } 
+  //       )}
+  //   </div>
+  // );
 
   return (
     <div className="App">
-      <h1 className="Header">Characters</h1>
-      <CharacterList>
-      </CharacterList>
-      
-    </div>
+      <h1 className="Header">Rick and Morty Characters</h1>
+      <div>
+        {character.map((char) => (
+          <Character key={char.id} charName={char.name}/>
+        ))}
+      </div>
+ </div>
   );
 }
 
