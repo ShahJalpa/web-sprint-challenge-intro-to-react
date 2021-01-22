@@ -33,9 +33,18 @@ const App = () => {
     })
   }, [])
 
+  cosnst CharacterList = sty
+
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
+      <div className="CharacterList"> 
+        {
+          character.map((char) =>{
+            return <Character key={char.id} character={char}/>
+          })
+        }
+      </div>
     </div>
   );
 }
