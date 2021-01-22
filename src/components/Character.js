@@ -8,7 +8,7 @@ const Character = (props) => {
     const {charId, charName, charStatus, charSpecies, charType, charGender, charImage, charCreated} = props;
 
     return (
-        <h2>charName</h2>
+        <h2>{charName}</h2>
     )
 }
 
