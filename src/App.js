@@ -47,12 +47,16 @@ const App = () => {
     width: 100%;
     margin: 2%
     display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
   `
 
   return (
     <div className="App">
       <h1 className="Header">Rick and Morty Characters</h1>
       <StyleApp>
+
         {character.map((char) => (
           <Character key={char.id} 
                      charrId ={char.id} 
@@ -61,7 +65,7 @@ const App = () => {
                      charSpecies={char.species}
                      charType={char.type}
                      charGender={char.gender}
-                     charImage={char.url}
+                     charImage={char.image}
           />
         ))}
       </StyleApp>

@@ -16,11 +16,11 @@ const Character = (props) => {
     return (
         <StyleChar>
             <h2>{charId} {charName}</h2>
+            <img src={charImage} alt='Rick and Morty Character'></img>
             <ul>
                 <li>{charStatus} - {charSpecies}</li>
                 <li>{charType}</li>
                 <li>{charGender}</li>
-                <li>{charImage}</li>
                 <li>{charCreated}</li>
             </ul>
         </StyleChar>

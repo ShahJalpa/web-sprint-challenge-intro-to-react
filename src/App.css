@@ -1,8 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap'); /*import google fonts*/
+
+body{
+  max-width: 100%;
+  background-position: center;
+}
 .App {
   text-align: center;
 }
 .Header {
-  color: #443e3e;
+  color: rgb(3, 6, 146);
   text-shadow: 1px 1px 5px #fff;
+  font-family: 'Potta One', cursive;
+  font-size: 6rem;
+  font-display: center;
+  background-color: lightslategrey;
 }
+
+*{
+  box-sizing: border-box;
+}
+
+
 /* write your parent styles in here for your App.js */
