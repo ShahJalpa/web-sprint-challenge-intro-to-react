@@ -50,6 +50,7 @@ const App = () => {
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
+    
   `
 
   return (

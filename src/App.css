@@ -3,11 +3,15 @@
 body{
   max-width: 100%;
   background-position: center;
+  margin-top: 0%;
+  background-color: seashell;
 }
 .App {
   text-align: center;
 }
 .Header {
+  padding-top: 0;
+  margin-top: auto;
   color: rgb(3, 6, 146);
   text-shadow: 1px 1px 5px #fff;
   font-family: 'Potta One', cursive;
